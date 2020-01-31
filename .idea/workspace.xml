@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddb77ba7-ab1d-47df-9b57-a7c10dbe3541" name="Default Changelist" comment="" />
+    <list default="true" id="ddb77ba7-ab1d-47df-9b57-a7c10dbe3541" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala-udemy-trening.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part6Patterns/StashDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7a682c39324684d4467$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7a682c39324684d4467.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7a682c39324684d4467.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +22,12 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideInfoMessages" value="true" />
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+    <option name="HIDE_INFO_MESSAGES" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -22,15 +41,26 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="scala-udemy-trening" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Package Object" />
+        <option value="Scala Object" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -43,14 +73,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="sbt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15125" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="Application.Mailboxes">
+  <component name="RunManager" selected="Scala REPL.Scala REPL">
     <configuration name="Dispatchers" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="part5infra.Dispatchers" />
       <module name="scala-udemy-trening" />
@@ -90,19 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartingStopingActors" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part4FaultTolerance.StartingStopingActors" />
-      <module name="scala-udemy-trening" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="part4FaultTolerance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TimersSchedulers" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="part5infra.TimersSchedulers" />
       <module name="scala-udemy-trening" />
@@ -116,44 +142,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="scala-udemy-trening" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.Mailboxes" />
         <item itemvalue="Application.Dispatchers" />
         <item itemvalue="Application.Routers" />
         <item itemvalue="Application.TimersSchedulers" />
-        <item itemvalue="Application.StartingStopingActors" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="scala-udemy-trening" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="scala-udemy-trening [file:/Users/mkrzan/IdeaProjects/scala-udemy-trening/]" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value="scala-udemy-trening-build" />
-                <option name="path" value="$PROJECT_DIR$/project" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3156117474414" />
         <entry key="$PROJECT_DIR$/build.sbt" value="4281927804" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="2912332145" />
       </map>
@@ -202,34 +213,59 @@
     </state>
     <state x="698" y="373" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580037709048" />
     <state x="3258" y="515" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580394066297" />
+    <state x="2984" y="404" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580476989058">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="2984" y="404" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580476989058" />
     <state x="1162" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580040308701">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="1162" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1580040308701" />
-    <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1580472720734">
+    <state x="3323" y="664" width="402" height="159" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1580473215074">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="3323" y="664" width="402" height="159" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580473215074" />
+    <state x="3370" y="649" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580473224961">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="3370" y="649" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580473224961" />
+    <state x="3379" y="517" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1580478299736">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="3379" y="517" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580478299736" />
+    <state x="3285" y="579" key="#com.intellij.tools.ToolEditorDialog" timestamp="1580477597139">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="3285" y="579" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580477597139" />
+    <state x="3268" y="605" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580478019739">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="3268" y="605" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580476899536" />
+    <state x="3268" y="605" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580478019739" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1580479097353">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state width="912" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528540" />
-    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720734" />
-    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917143" />
-    <state width="1878" height="344" key="GridCell.Tab.0.center" timestamp="1580472720732">
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580479097353" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1580473094416" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center" timestamp="1580479097351">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state width="912" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528539" />
-    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720732" />
-    <state width="1878" height="344" key="GridCell.Tab.0.center/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917142" />
-    <state width="1878" height="344" key="GridCell.Tab.0.left" timestamp="1580472720731">
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580479097351" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1580473094415" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left" timestamp="1580479097349">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state width="912" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528539" />
-    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720731" />
-    <state width="1878" height="344" key="GridCell.Tab.0.left/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917141" />
-    <state width="1878" height="344" key="GridCell.Tab.0.right" timestamp="1580472720733">
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580479097349" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1580473094412" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right" timestamp="1580479097352">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state width="912" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528540" />
-    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720733" />
-    <state width="1878" height="344" key="GridCell.Tab.0.right/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917143" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580479097352" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1580473094416" />
     <state width="1878" height="423" key="GridCell.Tab.1.bottom" timestamp="1580393583199">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
@@ -250,20 +286,35 @@
     </state>
     <state width="912" height="423" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580245715901" />
     <state width="1878" height="423" key="GridCell.Tab.1.right/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580393583198" />
-    <state x="469" y="239" key="SettingsEditor" timestamp="1578333831700">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="3028" y="381" key="SettingsEditor" timestamp="1580479168360">
+      <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state x="469" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1578333831700" />
+    <state x="3028" y="381" key="SettingsEditor/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580479168360" />
+    <state x="3029" y="381" key="SettingsEditor/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580478463598" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1580478094745">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580478094745" />
     <state x="639" y="443" key="com.intellij.ide.util.TipDialog" timestamp="1580040226008">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="639" y="443" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580040226008" />
     <state x="3199" y="570" key="com.intellij.ide.util.TipDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1579879678417" />
     <state x="639" y="443" key="com.intellij.ide.util.TipDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1578058225967" />
+    <state x="3253" y="700" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580477464280">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="3253" y="700" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580477464280" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1578335968241">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1578335968241" />
+    <state x="2935" y="526" key="new project wizard" timestamp="1580478561154">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="2935" y="526" key="new project wizard/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580478561154" />
+    <state x="2935" y="526" key="new project wizard/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580478357520" />
     <state x="3185" y="413" width="670" height="676" key="search.everywhere.popup" timestamp="1580472273789">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
