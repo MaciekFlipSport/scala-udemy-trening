@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ddb77ba7-ab1d-47df-9b57-a7c10dbe3541" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Vt2lZ98ICfglQX3sW6QhhhE8Ks" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15125" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.Mailboxes">
+    <configuration name="Dispatchers" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5infra.Dispatchers" />
+      <module name="scala-udemy-trening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part5infra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mailboxes" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5infra.Mailboxes" />
+      <module name="scala-udemy-trening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part5infra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Routers" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5infra.Routers" />
+      <module name="scala-udemy-trening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part5infra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartingStopingActors" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part4FaultTolerance.StartingStopingActors" />
+      <module name="scala-udemy-trening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part4FaultTolerance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimersSchedulers" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5infra.TimersSchedulers" />
+      <module name="scala-udemy-trening" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part5infra.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Mailboxes" />
+        <item itemvalue="Application.Dispatchers" />
+        <item itemvalue="Application.Routers" />
+        <item itemvalue="Application.TimersSchedulers" />
+        <item itemvalue="Application.StartingStopingActors" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="scala-udemy-trening" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="scala-udemy-trening [file:/Users/mkrzan/IdeaProjects/scala-udemy-trening/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="scala-udemy-trening-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3156117474414" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="4281927804" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2912332145" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddb77ba7-ab1d-47df-9b57-a7c10dbe3541" name="Default Changelist" comment="" />
+      <created>1578058221877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578058221877</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1029" y="265" key="#Auto_Import" timestamp="1580067502756">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="1029" y="265" key="#Auto_Import/0.0.1920.1200@0.0.1920.1200" timestamp="1580067502756" />
+    <state x="1100" y="277" key="#IntroAkkaConfig" timestamp="1580040496635">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="1100" y="277" key="#IntroAkkaConfig/0.0.1920.1200@0.0.1920.1200" timestamp="1580040496635" />
+    <state x="560" y="265" key="#Project_Structure" timestamp="1578332467297">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="560" y="265" key="#Project_Structure/0.0.1920.1200@0.0.1920.1200" timestamp="1578332467297" />
+    <state x="3258" y="515" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580394066297">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="698" y="373" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580037709048" />
+    <state x="3258" y="515" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580394066297" />
+    <state x="1162" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580040308701">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="1162" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1580040308701" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1580472720734">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528540" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720734" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917143" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center" timestamp="1580472720732">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528539" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720732" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917142" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left" timestamp="1580472720731">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528539" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720731" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917141" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right" timestamp="1580472720733">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580246528540" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472720733" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.23.2560.1417/2560.165.1920.1177/-1920.505.1920.1177@2560.165.1920.1177" timestamp="1579769917143" />
+    <state width="1878" height="423" key="GridCell.Tab.1.bottom" timestamp="1580393583199">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="423" key="GridCell.Tab.1.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1580245715901" />
+    <state width="1878" height="423" key="GridCell.Tab.1.bottom/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580393583199" />
+    <state width="1878" height="423" key="GridCell.Tab.1.center" timestamp="1580393583198">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="423" key="GridCell.Tab.1.center/0.0.1920.1200@0.0.1920.1200" timestamp="1580245715900" />
+    <state width="1878" height="423" key="GridCell.Tab.1.center/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580393583198" />
+    <state width="1878" height="423" key="GridCell.Tab.1.left" timestamp="1580393583197">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="423" key="GridCell.Tab.1.left/0.0.1920.1200@0.0.1920.1200" timestamp="1580245715900" />
+    <state width="1878" height="423" key="GridCell.Tab.1.left/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580393583197" />
+    <state width="1878" height="423" key="GridCell.Tab.1.right" timestamp="1580393583198">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state width="912" height="423" key="GridCell.Tab.1.right/0.0.1920.1200@0.0.1920.1200" timestamp="1580245715901" />
+    <state width="1878" height="423" key="GridCell.Tab.1.right/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580393583198" />
+    <state x="469" y="239" key="SettingsEditor" timestamp="1578333831700">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="469" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1578333831700" />
+    <state x="639" y="443" key="com.intellij.ide.util.TipDialog" timestamp="1580040226008">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="639" y="443" key="com.intellij.ide.util.TipDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1580040226008" />
+    <state x="3199" y="570" key="com.intellij.ide.util.TipDialog/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1579879678417" />
+    <state x="639" y="443" key="com.intellij.ide.util.TipDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1578058225967" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1578335968241">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1578335968241" />
+    <state x="3185" y="413" width="670" height="676" key="search.everywhere.popup" timestamp="1580472273789">
+      <screen x="2560" y="142" width="1920" height="1200" />
+    </state>
+    <state x="625" y="271" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1580066440805" />
+    <state x="3185" y="413" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580472273789" />
+  </component>
+</project>
