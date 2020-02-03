@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddb77ba7-ab1d-47df-9b57-a7c10dbe3541" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala-udemy-trening.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part6Patterns/StashDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part6Patterns/AskSpec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part6Patterns/FSMSpec.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7a682c39324684d4467$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7a682c39324684d4467.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$a7a682c39324684d4467.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +79,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="part6Patterns" />
+    </key>
   </component>
   <component name="RunManager" selected="Scala REPL.Scala REPL">
     <configuration name="Dispatchers" type="Application" factoryName="Application" temporary="true">
@@ -217,10 +213,11 @@
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state x="2984" y="404" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1417/2560.142.1920.1200/-1920.505.1920.1177@2560.142.1920.1200" timestamp="1580476989058" />
-    <state x="1162" y="410" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580040308701">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="3722" y="552" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580744273371">
+      <screen x="2560" y="142" width="1920" height="1200" />
     </state>
     <state x="1162" y="410" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1580040308701" />
+    <state x="3722" y="552" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440/2560.142.1920.1200/-1920.482.1920.1200@2560.142.1920.1200" timestamp="1580744273371" />
     <state x="3323" y="664" width="402" height="159" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1580473215074">
       <screen x="2560" y="142" width="1920" height="1200" />
     </state>
