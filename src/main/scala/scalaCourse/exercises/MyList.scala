@@ -14,8 +14,11 @@ abstract class MyList[+A] {
   def map[B](transformer: A => B): MyList[B]
   def flatMap[B](transformer: A => MyList[B]): MyList[B]
   def filter(predicate: A => Boolean): MyList[A]
-
   def ++[B >: A](list: MyList[B]): MyList[B]
+
+  // hofs
+  def foreach(f: A => Unit): Unit
+  def sort(compare: (A, A) => Int): MyList[A]
 
   /*
   head = first element of the list
@@ -39,6 +42,10 @@ case object Empty extends MyList[Nothing] {
   def filter(predicate: Nothing => Boolean): MyList[Nothing] = Empty
 
   def ++[B >: Nothing](list: MyList[B]): MyList[B] = list
+
+  def foreach(f: Nothing => Unit): Unit = ()
+  def sort(compare: (Nothing, Nothing) => Int): MyList[Nothing] = Empty
+
 }
 
 case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
@@ -74,6 +81,21 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
    */
   def flatMap[B](transformer: A => MyList[B]): MyList[B] =
     transformer(h) ++ t.flatMap(transformer)
+
+  def foreach(f: A => Unit): Unit = {
+    f(h)
+    t.foreach(f)
+  }
+
+  def sort(compare: (A, A) => Int): MyList[A] = {
+    def insert(x: A, sortedList: MyList[A]): MyList[A] =
+      if (sortedList.isEmpty) new Cons(x, Empty)
+      else if (compare(x, sortedList.head) <= 0) new Cons(x, sortedList)
+      else new Cons(sortedList.head, insert(x, sortedList.tail))
+
+    val sortedTail = t.sort(compare)
+    insert(h, sortedTail)
+  }
 
 }
 //trait MyPredicate[-T] {
@@ -124,4 +146,24 @@ object ListTest extends App {
   //  val difList: Int => MyList[Int] = a => Cons(a, Cons(a + 1, Empty))
   //  println(listOfInteger.flatMap(elem => difList(elem)).toString)
   println(listOfInteger.flatMap(elem => Cons(elem, Cons(elem + 1, Empty))).toString)
+
+  /*
+  1. Expand MyLIst
+    - foreach method A => Unit
+    [1,2,3].foreach(x => println(x)
+
+    - sort function ((A,A) => Int) => MyList
+    [1,2,3].sort((x, y => y-x) => [3,2,1]
+
+    - ZipWith (list, (A, A) => B ) => MyList[B]
+    -fold
+
+  2. toCurry(f: (Int, Int0 => Int) => (Int => Int => Int)
+      fromCurry(f: (Int => Int => Int)) => (Int, Int) => Int
+
+  3. compose(f,g) => x => f(g(x))
+     adnThen(f,g) => x => g(f(x))
+   */
+  listOfInteger.foreach(element => println(element))
+  println(listOfInteger.sort((x,y) => y-x))
 }
