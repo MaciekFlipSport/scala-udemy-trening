@@ -29,7 +29,7 @@ object HOFsCurries extends App {
   println(plus10(1))
   println(plus10(2))
 
-  // cirried functions
+  // curried functions
   val superAdder: Int => Int => Int = (x: Int) => (y: Int) => x + y
   val add3 = superAdder(3)  // y => 3 + y
   println(add3(10))

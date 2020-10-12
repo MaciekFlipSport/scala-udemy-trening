@@ -20,6 +20,9 @@ abstract class MyList[+A] {
   def foreach(f: A => Unit): Unit
   def sort(compare: (A, A) => Int): MyList[A]
 
+  //  concatenation
+  def ++[B >: A](list: MyList[B]): MyList[B]
+
   /*
   head = first element of the list
   tail = remainder of the list
@@ -43,6 +46,7 @@ case object Empty extends MyList[Nothing] {
 
   def ++[B >: Nothing](list: MyList[B]): MyList[B] = list
 
+  // hofs
   def foreach(f: Nothing => Unit): Unit = ()
   def sort(compare: (Nothing, Nothing) => Int): MyList[Nothing] = Empty
 
@@ -82,6 +86,7 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
   def flatMap[B](transformer: A => MyList[B]): MyList[B] =
     transformer(h) ++ t.flatMap(transformer)
 
+  // hofs
   def foreach(f: A => Unit): Unit = {
     f(h)
     t.foreach(f)
