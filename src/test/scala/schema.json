@@ -1,0 +1,82 @@
+{
+  "type": "record",
+  "name": "StateChange",
+  "namespace": "net.flipsports.gmx.dataapi.internal.customers.operations",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": "string",
+      "logicalType": "UUID"
+    },
+    {
+      "name": "createdDateUTC",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "companyId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "logicalType": "UUID"
+    },
+    {
+      "name": "externalUserId",
+      "type": "string"
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "email",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "payload",
+      "type": [
+        {
+          "type": "record",
+          "name": "Tags",
+          "fields": [
+            {
+              "name": "type",
+              "type": [
+                "null",
+                {
+                  "type": "enum",
+                  "name": "Tag",
+                  "symbols": [
+                    "IRISH_USER_REGISTRATION",
+                    "F_ACCOUNT",
+                    "MARKETING_CAMPAIGN"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "data",
+              "type": {
+                "type": "map",
+                "values": "string"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
