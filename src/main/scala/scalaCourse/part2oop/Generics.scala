@@ -4,7 +4,7 @@ object Generics extends App {
 
   class MyList[+A] {
     // use type A
-    def add[B >: A](element: B): MyList[B] = ???  // !!!!!
+    def add[B >: A](element: B): MyList[B] = ??? // !!!!!
   }
 
   class MyMap[Key, Value]
@@ -41,11 +41,6 @@ object Generics extends App {
   // bounded types <: >:
   class Cage[A <: Animal](animal: A)
   val cage = new Cage(new Dog)
-
-
   // expand MyList to be generic
-
-
-
 
 }

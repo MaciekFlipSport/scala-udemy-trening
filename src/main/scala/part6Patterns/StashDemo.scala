@@ -1,5 +1,7 @@
 package part6Patterns
 
+import akka.actor.{Actor, ActorLogging, ActorSystem, Props, Stash}
+
 object StashDemo extends App{
 
   /*

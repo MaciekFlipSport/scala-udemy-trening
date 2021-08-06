@@ -1,6 +1,6 @@
 package scalaCourse.part1Basics
 
-object Expressions extends App {
+object  Expressions extends App {
 
   val x = 1 + 2  //EXPRESSION
   println(x)
@@ -59,4 +59,12 @@ object Expressions extends App {
     42
   }
   println(someOtherValue)
+
+  val aCodeBlock2 = {
+    val y = 2
+    val z = y + 1
+
+    if (z > 1) "heloo" else 1
+  }
+
 }

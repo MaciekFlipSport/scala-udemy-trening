@@ -19,9 +19,11 @@ abstract class MyList[+A] {
   // hofs
   def foreach(f: A => Unit): Unit
   def sort(compare: (A, A) => Int): MyList[A]
+  def zipWith[B, C](list: MyList[B], zip: (A, B) => C): MyList[C]
+  def fold[B](startValue: B)(operator: (B, A) => B): B
 
   //  concatenation
-  def ++[B >: A](list: MyList[B]): MyList[B]
+//  def ++[B >: A](list: MyList[B]): MyList[B]
 
   /*
   head = first element of the list
@@ -29,7 +31,7 @@ abstract class MyList[+A] {
   isEmpty = is this list empty
   add(int) => new list with this element added
   toString => a string representation of the list
-   */
+ */
 
 }
 
@@ -49,14 +51,19 @@ case object Empty extends MyList[Nothing] {
   // hofs
   def foreach(f: Nothing => Unit): Unit = ()
   def sort(compare: (Nothing, Nothing) => Int): MyList[Nothing] = Empty
+  def zipWith[B, C](list: MyList[B], zip: (Nothing, B) => C): MyList[C] =
+    if (!list.isEmpty)
+      throw new RuntimeException("Lists do not have the same lenght")
+    else Empty
+  def fold[B](start: B)(operator: (B, Nothing) => B): B = start
 
 }
 
 case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
   def head: A = h
   def tail: MyList[A] = t
-  def isEmpty: Boolean  = false
-  def add[B >: A](int: B): MyList[B]  = new Cons(int, this)
+  def isEmpty: Boolean = false
+  def add[B >: A](int: B): MyList[B] = new Cons(int, this)
   def printElements: String =
     if (t.isEmpty) "" + h
     else h + " " + t.printElements
@@ -102,6 +109,16 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
     insert(h, sortedTail)
   }
 
+  def zipWith[B, C](list: MyList[B], zip: (A, B) => C): MyList[C] =
+    if (list.isEmpty)
+      throw new RuntimeException("Lists do not have the same lenght")
+    else new Cons(zip(h, list.head), t.zipWith(list.tail, zip))
+
+  def fold[B](start: B)(operator: (B, A) => B): B = {
+    t.fold(operator(start, h))(operator)
+
+  }
+
 }
 //trait MyPredicate[-T] {
 //  def test(elem: T): Boolean
@@ -123,7 +140,8 @@ object ListTest extends App {
 
   val listOfInteger: MyList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   val anotherListOfInteger: MyList[Int] = new Cons(4, new Cons(5, Empty))
-  val listOfStrings: MyList[String] = new Cons("Hello", new Cons("Scala", Empty))
+  val listOfStrings: MyList[String] =
+    new Cons("Hello", new Cons("Scala", Empty))
 
   println(listOfInteger.toString)
   println(listOfStrings.toString)
@@ -133,16 +151,16 @@ object ListTest extends App {
   //  }).toString)
   //  val double: Int => Int = _ * 2
   //  println(listOfInteger.map(elem => double(elem)).toString)
-  println(listOfInteger.map(elem => elem * 2).toString)  //  THE BEST
-  println(listOfInteger.map(_ * 2).toString)  // FASTEST WAY
+  println(listOfInteger.map(elem => elem * 2).toString) //  THE BEST
+  println(listOfInteger.map(_ * 2).toString) // FASTEST WAY
 
   //  println(listOfInteger.filter(new Function1[Int, Boolean] {
   //    override def apply(elem: Int): Boolean = elem % 2 == 0
   //  }).toString)
   //  val moduloTwo: Int => Boolean = _ %2 == 0
   //  println(listOfInteger.filter(element => moduloTwo(element)).toString)
-  println(listOfInteger.filter(element => element %2 == 0).toString)  //  THE BEST
-  println(listOfInteger.filter(_ %2 == 0).toString)  // FASTEST WAY
+  println(listOfInteger.filter(element => element % 2 == 0).toString) //  THE BEST
+  println(listOfInteger.filter(_ % 2 == 0).toString) // FASTEST WAY
 
   println((listOfInteger ++ anotherListOfInteger).toString)
   //  println(listOfInteger.flatMap(new Function1[Int, MyList[Int]] {
@@ -150,7 +168,9 @@ object ListTest extends App {
   //  }))
   //  val difList: Int => MyList[Int] = a => Cons(a, Cons(a + 1, Empty))
   //  println(listOfInteger.flatMap(elem => difList(elem)).toString)
-  println(listOfInteger.flatMap(elem => Cons(elem, Cons(elem + 1, Empty))).toString)
+  println(
+    listOfInteger.flatMap(elem => Cons(elem, Cons(elem + 1, Empty))).toString
+  )
 
   /*
   1. Expand MyLIst
@@ -169,6 +189,20 @@ object ListTest extends App {
   3. compose(f,g) => x => f(g(x))
      adnThen(f,g) => x => g(f(x))
    */
-  listOfInteger.foreach(element => println(element))
-  println(listOfInteger.sort((x,y) => y-x))
+  listOfInteger.foreach(println)
+  println(listOfInteger.sort((x, y) => y - x))
+
+  println(
+    anotherListOfInteger.zipWith[String, String](listOfStrings, _ + "-" + _)
+  )
+
+  println(listOfInteger.fold(0)(_ + _))
+
+  // for comprehantions
+  val combinations = for {
+    n <- listOfInteger
+    string <- listOfStrings
+  } yield s"$n - $string"
+
+  println(combinations)
 }

@@ -17,13 +17,12 @@ object OOPbasics extends App {
   newPanTadeusz.isWrittenBy(adamMickiewicz)
   println(newPanTadeusz.authorAge())
 
-
   val counter = new Counter
   counter.inc.print
   counter.inc.inc.inc.print
   counter.inc(10).print
-
 }
+
 // constructor
 class Person(name: String, val age: Int) {
   // body
@@ -46,7 +45,6 @@ class Person(name: String, val age: Int) {
 //  => parameter = name: String (can't access person.age)
 //  => fields = val name: String (CAN access person.age)
 
-
 /*
 Novel and a Writer
 
@@ -68,23 +66,21 @@ Counter class
  */
 
 // 1.
-class Writer(firstName: String, surName: String, val year: Int) {
-  def fullName(): String = s"$firstName $surName"
+class Writer(fristName: String, lastName: String, val year: Int) {
+  def fullName(): String = s"$fristName $lastName"
 }
 
-class Novel(name: String, yearOfRelease: Int, author: Writer) {
-
-  def authorAge(): Int = yearOfRelease - author.year
-//  def isWrittenBy(): Unit = println(s"Novel written by ${author.fullName()}")
+class Novel(name: String, yearOfRealase: Int, author: Writer) {
+  def authorAge(): Int = yearOfRealase - author.year
   def isWrittenBy(author: Writer) = author == this.author
   def copy(newYear: Int): Novel = new Novel(this.name, newYear, this.author)
 }
 
-// 2.
+//2.
 class Counter(val count: Int = 0) {
   def inc: Counter = {
     println("incrementing")
-    new Counter(count + 1 )
+    new Counter(count + 1)
   } //immutability
   def dec: Counter = {
     println("decrementing")
@@ -93,13 +89,27 @@ class Counter(val count: Int = 0) {
 
   def inc(n: Int): Counter = {
     if (n <= 0) this
-    else inc.inc(n-1)
+    else inc.inc(n - 1)
   }
   def dec(n: Int): Counter = {
     if (n <= 0) this
-    else dec.dec(n-1)
+    else dec.dec(n - 1)
   }
 
   def print: Unit = println(count)
 
 }
+
+//class Counter(val count: Int) {
+//  def inc = new Counter(count+1)
+//  def dec = new Counter(count-1)
+//
+//  def inc(x:Int):Counter = {
+//    if (x<=0) this
+//    else inc.inc(x-1)
+//  }
+//  def dec(x:Int):Counter = {
+//    if (x<=0) this
+//    else dec.dec(x-1)
+//  }
+//}
